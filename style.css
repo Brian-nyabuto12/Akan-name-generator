@@ -1,0 +1,15 @@
+.container{
+
+
+}
+.jumbotron{
+    background-image: url(../images/damien-dufour-photographie-harf8bT8ND4-unsplash.jpg);
+    background-repeat: no-repeat;
+}
+header,p{
+    text-align: center;
+    color: blue;
+    font: large;
+    
+    
+}
