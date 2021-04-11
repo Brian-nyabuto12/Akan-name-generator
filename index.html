@@ -17,6 +17,10 @@
       <div class="row">
           <div class="col-md-8">
             <form class="myform" onsubmit="return getAkanName()">
+              <label for="century">
+                century:
+                <input type="century-input" type="number" name="century" placeholder="CC" value="" required>
+              </label>
                 <label for="year-of-birth">
                   Year:
                   <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
@@ -45,6 +49,9 @@
               <form onsubmit="return clearInput()">
                 <input class="clear" type="submit" value="Clear input">
               </form>
+
+              <h id = display-name><strong> Your Akan name will be displayed below:</strong></h>
+              <p id="result"></p>
               
               <div class="col-md-6">
                 <h1>ABOUT AKAN NAMES</h1>
@@ -59,13 +66,8 @@
                <p>
                 <li>Do you know that Ghana's first president <em> Kwame Nkrumah was born on saturday</em>.</li>
                 <li>You too can <strong>find your birthday and then correspond with Akan Names</strong>.</li>
-                
+                 </p>
             
-        
-            </p>
-            <div class="row output">
-                <P id="result"></P>
-            </div>
             
            
             </div>
