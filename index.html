@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAME GENERATOR</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" >
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -15,34 +16,37 @@
         <h1>This is a Name generator Web Page </h1>
       <div class="row">
           <div class="col-md-8">
-              <form>
-                  <div class="form-group">
-                      <label for="Century">Century</label>
-                      <input type="century" class="form-control" id="century" placeholder="for example 19" min="1" max="100" required>
-                  </div>
-                  <div class="form-group">
-                      <label for="Year">Year</label>
-                      <input type="year" class="form-control" id="year" placeholder="for example 2021" required>
-                  </div>
-                  
-                  <div class="form-group">
-                    <label for="Date of birth">Date of birth</label>
-                    <input type="Date of birth" class="form-control" id="Date of birth" placeholder="for example 1" max="31" min="1" required>
-                </div>
-                 <div class="form-group form-check">
-                     <input type="radio" name="one" class="form-check-input" value="" id="gender" required>
-                     <label for="male">male</label>
-                     <br>
-                     <input type="radio" name="one" class="form-check-input" value="" id="gender">
-                     <label for="female">female</label>
-                 </div>
-                 <div>
-                     <button onclick="result();">submit</button>
-                 </div>
-                 <input type="reset">
-                  
+            <form class="myform" onsubmit="return getAkanName()">
+                <label for="year-of-birth">
+                  Year:
+                  <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+                </label>
+                <label for="month-of-birth">
+                  Month:
+                  <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+                </label>
+                <label for="day-of-birth">
+                  Day:
+                  <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+                </label>
+                <br>
+                <label for="gender">
+                  <p>Select your gender: </p>
+                  Male
+                  <input id="male-input" type="radio" name="gender" value="male" required>
+                  Female
+                  <input id="female-input" type="radio" name="gender" value="female" required>
+      
+                </label>
+                <br><br>
+                <input id="get-name" type="submit" name="" value="Generate name">
+                <br><br>
               </form>
-              <div class="col-md-12">
+              <form onsubmit="return clearInput()">
+                <input class="clear" type="submit" value="Clear input">
+              </form>
+              
+              <div class="col-md-6">
                 <h1>ABOUT AKAN NAMES</h1>
                 <P>
 
@@ -55,16 +59,20 @@
                <p>
                 <li>Do you know that Ghana's first president <em> Kwame Nkrumah was born on saturday</em>.</li>
                 <li>You too can <strong>find your birthday and then correspond with Akan Names</strong>.</li>
+                
+            
+        
             </p>
             <div class="row output">
                 <P id="result"></P>
             </div>
+            
+           
             </div>
           </div>
       </div>  
     </div>
-
-
+   
     
 </body>
 <script src="script.js"></script>
