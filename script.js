@@ -40,7 +40,50 @@ var checkgender = function(){
     switch(gender){
         case "male":
             if(dayOfTheWeek == 0){
-                document.getElementById("result").
+                document.getElementById("result").innerHTML = "monday" + maleNames[0];
             }
+                  else if(day == 1){
+                  document.getElementById("result").innerHTML = "Tuesday" + maleNames[1];
+                        }
+                    else if(day == 2){
+                    document.getElementById("result").innerHTML = "wednesday" + maleNames[2];
+            }            
+                        else if(day == 3){
+                        document.getElementById("result").innerHTML = "Thursday" + maleNames[3];
+            }
+                              else if(day == 4){
+                              document.getElementById("result").innerHTML = "Friday" + maleNames[4];
+            }
+                               else if(day == 5){
+                                document.getElementById("result").innerHTML = "saturday" + maleNames[5];
+                        }
+                                     else(day == 6){
+                                     document.getElementById("result").innerHTML = "sunday" + maleNames[6];
+                        }
+                        break;
+                        case "female":
+                            if(dayOfTheWeek == 0){
+                                document.getElementById("result").innerHTML = "monday" + femaleNames[0];
+                            }
+                                  else if(day == 1){
+                                  document.getElementById("result").innerHTML = "Tuesday" + femaleNames[1];
+                                        }
+                                    else if(day == 2){
+                                    document.getElementById("result").innerHTML = "wednesday" + femaleNames[2];
+                            }            
+                                        else if(day == 3){
+                                        document.getElementById("result").innerHTML = "Thursday" + femaleNames[3];
+                            }
+                                              else if(day == 4){
+                                              document.getElementById("result").innerHTML = "Friday" + femaleNames[4];
+                            }
+                                               else if(day == 5){
+                                                document.getElementById("result").innerHTML = "saturday" + femaleNames[5];
+                                        }
+                                                     else(day == 6){
+                                                     document.getElementById("result").innerHTML = "sunday" +femaleNames[6];
+                                        }
+                                        break;
+                                        default:
     }
 }
