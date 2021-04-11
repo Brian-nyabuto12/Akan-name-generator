@@ -131,7 +131,7 @@ function getGender(){
         return false;
         break;
       default:
-        alert(" Akan name for you");
+        alert("No Akan name for you");
 
     }
   } else if(myGenderValue == "female" && monthValid && dayValid) {
