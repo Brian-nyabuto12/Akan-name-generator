@@ -27,5 +27,20 @@ var result = function(){
 var checkgender = function(){
     calculate();
     var gender = document.getElementById("one");
-    
+    if(gender[0].checked == true){
+        gender = "male";
+    }
+    else if(gender[1].checked == true){
+        gender ="female"
+    }
+    else{
+        alert("input gender")
+    }
+
+    switch(gender){
+        case "male":
+            if(dayOfTheWeek == 0){
+                document.getElementById("result").
+            }
+    }
 }
