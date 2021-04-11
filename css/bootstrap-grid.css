@@ -8,6 +8,9 @@ html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
 }
+h1{
+  font-size: smaller;
+}
 
 *,
 *::before,

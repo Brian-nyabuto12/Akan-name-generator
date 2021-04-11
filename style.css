@@ -1,15 +1,23 @@
 .container{
-
-
-}
-.jumbotron{
-    background-image: url(../images/damien-dufour-photographie-harf8bT8ND4-unsplash.jpg);
+    background-image: url(../images/hu-chen-60XLoOgwkfA-unsplash.jpg);
     background-repeat: no-repeat;
+
 }
+
 header,p{
     text-align: center;
     color: blue;
     font: large;
     
+    
+}
+h1{
+    font: small;
+}
+.output{
+    border: solid 2 px black;
+    height: 50%;
+    width: 95%;
+    border-radius: 4px;
     
 }
