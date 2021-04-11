@@ -24,3 +24,8 @@ var result = function(){
     dayOfTheWeek = calculate();
     checkgender();
 }
+var checkgender = function(){
+    calculate();
+    var gender = document.getElementById("one");
+    
+}
