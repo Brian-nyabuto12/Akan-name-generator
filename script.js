@@ -1,5 +1,3 @@
-
-
 function getAkanName(){
    var yearOfBirth = document.getElementById("year").Value;
    var monthOfBirth = Number(document.getElementById("month").Value);
@@ -16,12 +14,6 @@ function getGender(){
 }
  var myGenderValue = getGender();
  console.log(myGenderValue);
-
- 
-
-  var dayValidator = getdayValidator();
-  console.log(dayValidator);
-
 
 
  function monthValidator(){
@@ -65,6 +57,7 @@ function getGender(){
   
    var dayOfWeekNumber = Math.floor((((Number(yearOfBirth)/4)-2*Number(yearOfBirth/4)-1)+
           ((5*Number(yearOfBirth)/4))+((26*(monthOfBirth)/10))+dayOfBirth)%7);
+    
 
    
    
