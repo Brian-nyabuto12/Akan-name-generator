@@ -63,8 +63,8 @@ function getGender(){
   
     
   
-   var dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
-          ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
+   var dayOfWeekNumber = Math.floor((((Number(yearOfBirth)/4)-2*Number(yearOfBirth/4)-1)+
+          ((5*Number(yearOfBirth)/4))+((26*(monthOfBirth)/10))+dayOfBirth)%7);
 
    
    
