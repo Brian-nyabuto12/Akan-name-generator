@@ -1,23 +1,22 @@
 function getAkanName(){
-    var century = document.getElementById("century");
-    var yearOfBirth = document.getElementById("year").Value;
-    var monthOfBirth = Number(document.getElementById("month").Value);
-    var dayOfBirth = Number(document.getElementById("day").Value);
-    var gender = document.getElementsByName("gender");
+   let yearOfBirth = document.getElementById("year").Value;
+    let monthOfBirth = Number(document.getElementById("month").Value);
+    let dayOfBirth = Number(document.getElementById("day").Value);
+    let gender = document.getElementsByName("gender");
 }
 function getGender(){
-    for(var gender of genders){
+    for(let gender of genders){
         if(gender.checked){
             return gender.value;
 
         }
     }
 }
- var myGenderValue = getGender();
+ let myGenderValue = getGender();
  console.log(myGenderValue);
 
 
- function monthValidity(){
+ function monthValidator(){
      if(monthOfBirth < 1 || monthOfBirth > 12){
          return false;
      }
@@ -48,20 +47,21 @@ function getGender(){
     }
   }
     
-  var monthValid = monthValidity();
-   var dayValid = dayValidity();
+let monthValid = monthValidator();
+  let dayValid = dayValidator();
 
-   var  dayOfTheWeek = math.floor( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7
+   let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
+          ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
+
    
    
-   
-   var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
-   var maleAkanNames = [ "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-   var femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+          let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
+   let maleAkanNames = [ "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+   let femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
   
   
   
-   var index;
+   let index;
 
   if (dayOfWeekNumber == 0){
     index = 6;

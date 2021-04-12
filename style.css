@@ -31,3 +31,34 @@ h1{
     height: 20px;
     box-shadow: 2px 2px blue;
   }
+  #get-name{
+    border-radius: 5px;
+    color: rgb(2, 2, 3);
+    background-color: blue;
+    text-align: center;
+    border: solid 1px blue;
+    width: 108px;
+    height: 32px;
+    font-size: 13px;
+    box-shadow: 2px 2px black;
+  }
+  
+  #result{
+    text-align: center;
+  }
+  clear{
+    border-radius: 5px;
+    color:  black;
+    background-color: blue;
+    text-align: center;
+    border: solid 1px blue;
+    width: 108px;
+    height: 32px;
+    font-size: 13px;
+    box-shadow: 2px 2px black;
+  }
+  
+  a:hover{
+    color: blue;
+  }
+  
