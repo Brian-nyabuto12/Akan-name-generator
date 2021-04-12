@@ -1,5 +1,33 @@
 .container{
     background-image: url(../images/hu-chen-60XLoOgwkfA-unsplash.jpg);
     background-repeat: no-repeat;
+    width: 80%;
+    margin: auto;
 
 }
+h1{
+    text-align: center;
+    font:10px;
+    font-size: 36px;
+    padding-top: 20px;
+  }
+  #year-input{
+    border-radius: 5px;
+    width: 60px;
+    height: 20px;
+    box-shadow: 2px blue;
+  }
+  
+  #month-input{
+    border-radius: 5px;
+    width: 60px;
+    height: 20px;
+    box-shadow: 2px 2px blue;
+  }
+  
+  #day-input{
+    border-radius: 5px;
+    width: 60px;
+    height: 20px;
+    box-shadow: 2px 2px blue;
+  }
