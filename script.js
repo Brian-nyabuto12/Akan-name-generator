@@ -1,18 +1,18 @@
 function getAkanName(){
-   let yearOfBirth = document.getElementById("year").Value;
-    let monthOfBirth = Number(document.getElementById("month").Value);
-    let dayOfBirth = Number(document.getElementById("day").Value);
-    let gender = document.getElementsByName("gender");
-}
+   var yearOfBirth = document.getElementById("year").Value;
+   var monthOfBirth = Number(document.getElementById("month").Value);
+   var dayOfBirth = Number(document.getElementById("day").Value);
+   var gender = document.getElementsByName("gender");
+
 function getGender(){
-    for(let gender of genders){
+    for(var gender of genders){
         if(gender.checked){
             return gender.value;
 
         }
     }
 }
- let myGenderValue = getGender();
+ var myGenderValue = getGender();
  console.log(myGenderValue);
 
 
@@ -47,22 +47,21 @@ function getGender(){
     }
   }
     
-let monthValid = monthValidator();
-  let dayValid = dayValidator();
+  var monthValid = monthValidator();
+  var dayValid = dayValidator();
 
-   let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
+   var dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
           ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
    
    
-          let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
-   let maleAkanNames = [ "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-   let femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+   var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
+   var maleAkanNames = [ "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+   var femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
   
   
   
-   let index;
-
+   var index;
   if (dayOfWeekNumber == 0){
     index = 6;
   } else {
@@ -182,7 +181,9 @@ let monthValid = monthValidator();
       }
     } else{
       alert("You entered invalid month or day");
-    }
+    }    
+  }
+      
   
 
 
