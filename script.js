@@ -1,3 +1,8 @@
+var yearOfBirth;
+var monthOfBirth;
+var dayOfBirth;
+var gender;
+
 function getAkanName(){
    var yearOfBirth = document.getElementById("year").Value;
    var monthOfBirth = Number(document.getElementById("month").Value);
@@ -15,6 +20,12 @@ function getGender(){
  var myGenderValue = getGender();
  console.log(myGenderValue);
 
+ 
+
+  var dayValidator = getdayValidator();
+  console.log(dayValidator);
+
+
 
  function monthValidator(){
      if(monthOfBirth < 1 || monthOfBirth > 12){
@@ -25,6 +36,8 @@ function getGender(){
      }
  }
 
+ var monthValidator =  getmonthValidator();
+ console.log(monthValidator);
 
 
  
@@ -46,10 +59,13 @@ function getGender(){
       return true;
     }
   }
-    
-  var monthValid = monthValidator();
-  var dayValid = dayValidator();
+    var dayValidator = getdayValidator();
+  console.log(dayValidator);
 
+
+  
+    
+  
    var dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
           ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
@@ -62,7 +78,7 @@ function getGender(){
   
   
    var index;
-  if (dayOfWeekNumber == 0){
+ if (dayOfWeekNumber == 0){
     index = 6;
   } else {
     index = dayOfWeekNumber - 1;
